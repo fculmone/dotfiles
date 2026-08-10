@@ -20,6 +20,10 @@ is: drop the file in, add one `link` line.
 |---|---|
 | `tmux/.tmux.conf` | truecolor, extended keys, pane-aware mouse, vi copy mode |
 
+Deliberately **not** set: prefix stays `C-b`, and there are no pane-navigation
+bindings — Neovim already owns `<C-h/j/k/l>` for window navigation, so binding
+the same keys in tmux would shadow it.
+
 Planned: `zsh/.zshrc`, `bash/.bashrc`. `install.sh` already handles both and
 skips them until they exist.
 
