@@ -1,0 +1,6 @@
+# Machine-local overrides and secrets — never commit
+.zshrc.local
+*.local
+*.backup-*
+
+.DS_Store
